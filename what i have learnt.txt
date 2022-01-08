@@ -1,0 +1,25 @@
+
+jupyter
+
+df.dtypes - shows the data type of the columns
+df[df.duplicated()] - checking whether the data has duplicates  
+df.drop_duplicates() - removing the duplicates 
+df.drop_duplicates(inplace=True) - removing the duplicates parmanently
+
+df.isnull() = Checking for null values 
+df.isnull().sum() = chdcking colummns that have null values 
+
+ import seaborn as sbn 
+sbn.heatmap(df.isnull())
+              showing the null values using in aheatmap (use seaborn)
+
+df['Title'] checks akll titles in the dataset
+isin() checks a specific element in a dataset
+
+	df[df['Title'].isin(['House of Cards'])] will check whether the column Title has the 	movie House of Cards
+
+	df[df['Title'].str.contains('House of Cards')] alternatively - will check whether the 	column Title has the movie House of Cards
+
+
+
+
